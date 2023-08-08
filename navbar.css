@@ -36,6 +36,7 @@ nav #menu li {
     line-height: 70px;
     position: relative;
     transition: all 0.3s ease-out;
+    z-index: 100000;
 }
 
 nav #menu li a {

@@ -10,6 +10,7 @@ body
     align-items: center;
     min-height: 100vh;
     background-color: #a0a0a0;
+    overflow-x: hidden;
 }
 section
 {
@@ -19,6 +20,9 @@ section
     flex-wrap: wrap;
     transform-style: preserve-3d;
     width: 1100px;
+    transform: translate(-50%);
+    margin-left: 50%;
+    
 }
 section .card
 {
@@ -93,4 +97,16 @@ section .card .box .contentBx div p
     color: #fff;
     font-size: 16px;
     letter-spacing: 1px;
+}
+
+@media(max-width: 1078px){
+    section {
+        width: 1000px;
+    }
+}
+
+@media(max-width: 709px) {
+    section {
+        width: 550px;
+    }
 }
