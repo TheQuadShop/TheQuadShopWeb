@@ -153,6 +153,15 @@ a+a {
     opacity: 0.99;
 }
 
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background: var(--text-color);
+}
+html::-webkit-scrollbar-thumb{
+    background: #000;
+    border-radius: 5rem;
+}
+
 @media(max-width: 768px) {
     #toggle {
         visibility: visible;
