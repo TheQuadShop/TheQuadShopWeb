@@ -23,3 +23,14 @@ const tl = gsap.timeline({
         y: -700,
         scrub: true
     })
+
+var temp = 0;
+window.onscroll = function () {
+    scroll = window.pageYOffset;
+    console.log(scroll)
+    if (scroll > temp) {
+        document.getElementsByClassName("h2")[0].style.opacity = '0';
+    } else if (scroll === temp){
+        document.getElementsByClassName("h2")[0].style.opacity = '1';
+    }
+}

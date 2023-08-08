@@ -18,7 +18,7 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-h1 {
+.h1 {
     font-size: 14rem;
     font-family: 'Bebas Neue';
     position: fixed;
@@ -28,6 +28,20 @@ h1 {
     z-index: 1;
     margin: 0;
     color: #ae8625;
+}
+
+.h2 {
+    font-size: 8;
+    font-family: 'Bebas Neue';
+    position: fixed;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    margin: 0;
+    color: #ae8625;
+    text-align: center;
+    transition: .8s;
 }
 
 .p1{
