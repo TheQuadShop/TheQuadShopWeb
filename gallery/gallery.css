@@ -44,7 +44,7 @@ body::-webkit-scrollbar {
     transition: .8s;
 }
 
-.p1{
+.p1 {
     font-size: 11rem;
     font-family: 'Bebas Neue';
     position: fixed;
@@ -90,75 +90,99 @@ section {
 .img:nth-of-type(1) {
     background-image: url('./images/lineup.jpg');
 }
+
 .img:nth-of-type(2) {
     background-image: url('./images/keep-score.jpeg');
 }
+
 .img:nth-of-type(3) {
     background-image: url('./images/zigzag.jpeg');
 }
+
 .img:nth-of-type(4) {
     background-image: url('./images/quadcut.jpeg');
 }
+
 .img:nth-of-type(5) {
     background-image: url('./images/quad-cuts.jpeg');
 }
+
 .img:nth-of-type(6) {
     background-image: url('./images/line-up.jpeg');
 }
+
 .img:nth-of-type(7) {
     background-image: url('./images/quad.jpg');
 }
+
 .img:nth-of-type(8) {
     background-image: url('./images/the-quad.jpeg');
 }
+
 .img:nth-of-type(9) {
     background-image: url('./images/IMG_1147.jpg');
 }
+
 .img:nth-of-type(10) {
     background-image: url('./images/IMG_1148.jpg');
 }
+
 .img:nth-of-type(11) {
     background-image: url('./images/IMG_1149.jpg');
 }
+
 .img:nth-of-type(12) {
     background-image: url('./images/IMG_1150.jpg');
 }
+
 .img:nth-of-type(13) {
     background-image: url('./images/IMG_1151.jpg');
 }
+
 .img:nth-of-type(14) {
     background-image: url('./images/IMG_1152.jpg');
 }
+
 .img:nth-of-type(15) {
     background-image: url('./images/IMG_1153.jpg');
 }
+
 .img:nth-of-type(16) {
     background-image: url('./images/IMG_1154.jpg');
 }
+
 .img:nth-of-type(17) {
     background-image: url('./images/IMG_1155.jpg');
 }
+
 .img:nth-of-type(18) {
     background-image: url('./images/IMG_1156.jpg');
 }
+
 .img:nth-of-type(19) {
     background-image: url('./images/');
 }
+
 .img:nth-of-type(20) {
     background-image: url('./images/');
 }
+
 .img:nth-of-type(21) {
     background-image: url('./images/');
 }
+
 .img:nth-of-type(22) {
     background-image: url('./images/');
 }
+
 .img:nth-of-type(23) {
     background-image: url('./images/');
 }
+
 .img:nth-of-type(24) {
     background-image: url('./images/');
 }
+
 .img:nth-of-type(25) {
     background-image: url('./images/');
 }
@@ -186,7 +210,7 @@ nav {
     z-index: 1;
 }
 
-nav #brand{
+nav #brand {
     float: left;
     display: block;
     margin-left: 84px;
@@ -202,14 +226,14 @@ nav #brand a {
     font-weight: 300;
 }
 
-nav #menu{
+nav #menu {
     font-size: 15px;
     float: left;
     left: 50%;
     position: relative;
 }
 
-nav #menu li{
+nav #menu li {
     display: inline-block;
     padding: 0px 30px;
     cursor: pointer;
@@ -218,14 +242,14 @@ nav #menu li{
     transition: all 0.3s ease-out;
 }
 
-nav #menu li a{
+nav #menu li a {
     color: #000;
     font-family: "Poppins";
     font-weight: 200;
 }
 
 
-#toggle{
+#toggle {
     position: absolute;
     right: 20px;
     top: 14px;
@@ -239,7 +263,7 @@ nav #menu li a{
     opacity: 0;
 }
 
-#toggle .span{
+#toggle .span {
     height: 3px;
     background: #000;
     transition: all 0.3s ease-out;
@@ -251,15 +275,15 @@ nav #menu li a{
     transform: rotate(45deg) translateX(2px) translateY(4px);
 }
 
-#toggle.on #two{
+#toggle.on #two {
     opacity: 0;
 }
 
-#toggle.on #three{
+#toggle.on #three {
     transform: rotate(-45deg) translateX(8px) translateY(-10px);
 }
 
-#resize{
+#resize {
     z-index: 1;
     top: 0px;
     position: absolute;
@@ -272,7 +296,7 @@ nav #menu li a{
     display: table;
 }
 
-#resize #menu{
+#resize #menu {
     height: 50px;
     display: table-cell;
     vertical-align: center;
@@ -288,27 +312,27 @@ nav #menu li a{
     cursor: pointer;
 }
 
-#resize li:nth-child(1){
+#resize li:nth-child(1) {
     margin-top: 140px;
 }
 
-#resize #menu li a{
+#resize #menu li a {
     color: #000;
 }
 
-#resize.active{
+#resize.active {
     visibility: visible;
     opacity: 0.99;
 }
 
 @media(max-width: 1080px) {
-    #toggle{
+    #toggle {
         visibility: visible;
         opacity: 1;
         margin-top: 6px;
     }
 
-    nav #brand{
+    nav #brand {
         margin-left: 18px;
     }
 
@@ -318,11 +342,11 @@ nav #menu li a{
         font-size: 20px;
     }
 
-    nav #menu{
+    nav #menu {
         display: none;
     }
 
-    .block{
+    .block {
         width: 35px;
         height: 35px;
         opacity: 0;
@@ -333,7 +357,16 @@ nav #menu li a{
 }
 
 @media(min-width: 1080px) {
-    #resize{
+    #resize {
         visibility: hidden !important;
+    }
+}
+
+@media(max-width: 768px) {
+    section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: 100vh;
+        margin: 0 auto;
     }
 }
